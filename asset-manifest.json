@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Technology-Landscape/static/css/main.ef083ac7.css",
+    "main.js": "/Technology-Landscape/static/js/main.203fd316.js",
+    "static/js/453.623ac1fd.chunk.js": "/Technology-Landscape/static/js/453.623ac1fd.chunk.js",
+    "index.html": "/Technology-Landscape/index.html",
+    "main.ef083ac7.css.map": "/Technology-Landscape/static/css/main.ef083ac7.css.map",
+    "main.203fd316.js.map": "/Technology-Landscape/static/js/main.203fd316.js.map",
+    "453.623ac1fd.chunk.js.map": "/Technology-Landscape/static/js/453.623ac1fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef083ac7.css",
+    "static/js/main.203fd316.js"
+  ]
+}
