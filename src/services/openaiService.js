@@ -1,6 +1,7 @@
 export const getAIResponse = async (prompt, context = "") => {
   try {
-    const apiKey = process.env.apiKey
+   const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+
      
 
     if (!apiKey) {
