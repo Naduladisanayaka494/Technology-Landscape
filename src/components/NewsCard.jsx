@@ -6,17 +6,23 @@ export default function NewsCard({ article }) {
 
   return (
     <div
-      className="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition cursor-pointer"
+      className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-xl transform hover:scale-[1.03] transition cursor-pointer"
       onClick={() => setSelectedArticle(article)}
+      role="button"
+      tabIndex={0}
+      onKeyPress={(e) => {
+        if (e.key === "Enter") setSelectedArticle(article);
+      }}
+      aria-label={`Open article: ${article.title}`}
     >
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+      <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
         {article.title}
       </h3>
-      <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">
-        {article.pubDate}
+      <p className="text-indigo-600 dark:text-indigo-400 text-sm mt-1 font-medium">
+        {new Date(article.pubDate).toLocaleDateString()}
       </p>
-      <p className="text-gray-700 dark:text-gray-200 mt-2">
-        {article.description.substring(0, 100)}...
+      <p className="text-gray-700 dark:text-gray-300 mt-3 line-clamp-3">
+        {article.description}
       </p>
     </div>
   );
