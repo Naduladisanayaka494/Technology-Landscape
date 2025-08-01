@@ -104,7 +104,7 @@ export default function ChatBot() {
   }
 
   return (
-    <div className="w-full md:w-1/3 bg-gray-50 dark:bg-gray-900 p-6 border-l border-gray-300 dark:border-gray-700 flex flex-col">
+    <div className="w-full md:w-1/4 h-[125vh] md:h-[100vh] bg-gray-50 dark:bg-gray-900 p-6 border-l border-gray-300 dark:border-gray-700 flex flex-col">
       {/* Header */}
       <div className="mb-4">
         <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">

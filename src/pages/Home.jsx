@@ -18,9 +18,9 @@ export default function Home() {
   }, [setNews]);
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-4">
+      <main className="flex-1 p-4 flex flex-col">
         <Header />
         <NewsFeed />
       </main>
@@ -28,3 +28,4 @@ export default function Home() {
     </div>
   );
 }
+
