@@ -1,7 +1,7 @@
 export const getAIResponse = async (prompt, context = "") => {
   try {
-    const apiKey =
-      "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";
+    const apiKey = process.env.apiKey
+     
 
     if (!apiKey) {
       throw new Error("OpenAI API key not configured");
